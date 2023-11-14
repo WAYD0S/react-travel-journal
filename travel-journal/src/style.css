@@ -1,21 +1,48 @@
-* {
+/* ---------------------- */
+/* Custom properties      */
+/* ---------------------- */
+:root {
+    --clr-accent: #f55a5a;
+    --ff-main: "Inter", sans-serif;
+}
+  
+@media (prefers-color-scheme: light) {
+    :root {
+        --clr-card-bg: #fff;
+        --clr-text-main: #2b283a;
+        --clr-text-light: #fff;
+        --clr-background-light: #fff8f8;
+    }
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-card-bg: #2e2e2e;
+        --clr-text-main: #ffffff;
+        --clr-text-light: #fff;
+        --clr-background-light: #2c2b2b;
+    }
+}
+
+html {
+    margin: 0;
+    font-family: var(--ff-main);
+    background: var(--clr-background-light);
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #dedee1;
-    
 }
 
 nav {
-    background: #F55A5A;
+    background-color: var(--clr-accent);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 55px;
-    flex-shrink: 0;
 }
 
 nav * {
@@ -27,25 +54,30 @@ nav > img {
 }
 
 nav > h4 {
-    color: #dedee1;
-    font-family: Inter;
-    font-size: 14.461px;
+    color: var(--clr-text-light);
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -1.085px;
+    margin-left: 2px;
 }
 
 .cards-list {
+    display: flex;
+    flex-direction: column;
     padding: 20px 200px;
-    gap: 20px;
+    
 }
+
 .card {
     display: flex;
     padding: 40px 40px;
     margin: 20px 0px;
     border-radius: 5px;
-    background: #FFF;
+    background: var(--clr-card-bg);   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+
 }
 
 .card--image > img {
@@ -54,6 +86,21 @@ nav > h4 {
     object-fit: cover;
     border-radius: 5px;
 }
+
+/* ---------------------- */
+/* Spacer                 */
+/* ---------------------- */
+
+.spacer {
+    width: 100%;
+    height: 2px; /* Thickness of the black line */
+    background-color: #F55A5A;
+}
+
+/* ---------------------- */
+/* CSS for right side     */
+/* of card with details   */
+/* ---------------------- */
 
 .card--text {
     padding: 12px 40px 20px 20px;
@@ -74,8 +121,7 @@ nav > h4 {
 }
 
 .location {
-    color: #2B283A;
-    font-family: Inter;
+    color: var(--clr-text-main);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -86,7 +132,6 @@ nav > h4 {
 
 .google-link {
     color: #918E9B;
-    font-family: Inter;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -96,8 +141,7 @@ nav > h4 {
 }
 
 .location--name {
-    color: #2B283A;
-    font-family: Inter;
+    color: var(--clr-text-main);
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
@@ -106,8 +150,7 @@ nav > h4 {
 }
 
 .location--period {
-    color: #2B283A;
-    font-family: Inter;
+    color: var(--clr-text-main);
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -115,10 +158,22 @@ nav > h4 {
 }
 
 .location--description {
-    color: #2B283A;
-    font-family: Inter;
+    color: var(--clr-text-main);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 15.36px */
+}
+
+/* ---------------------- */
+/* Footer                 */
+/* ---------------------- */
+
+footer {
+    background: #F55A5A;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eeeef1;
 }

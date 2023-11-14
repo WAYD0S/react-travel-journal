@@ -1,4 +1,4 @@
-import React from "react"
+import PropTypes from 'prop-types';
 
 export default function Card(props) {
     return (
@@ -22,3 +22,13 @@ export default function Card(props) {
         </div>
     )
 }
+
+Card.propTypes = {
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+    travelPeriod: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    coverImg: PropTypes.string.isRequired, 
+    mapsLink: PropTypes.string.isRequired 
+};
