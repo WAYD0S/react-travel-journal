@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #F8F8FF;
+    background: #dedee1;
     
 }
 
@@ -27,7 +27,7 @@ nav > img {
 }
 
 nav > h4 {
-    color: #FFF;
+    color: #dedee1;
     font-family: Inter;
     font-size: 14.461px;
     font-style: normal;
