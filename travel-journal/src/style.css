@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background: #F8F8FF;
+    
 }
 
 nav {
@@ -32,4 +34,16 @@ nav > h4 {
     font-weight: 500;
     line-height: normal;
     letter-spacing: -1.085px;
+}
+
+.cards-list {
+    padding: 20px 200px;
+    gap: 20px;
+}
+.card {
+    display: flex;
+    padding: 40px 40px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    background: #FFF;
 }
