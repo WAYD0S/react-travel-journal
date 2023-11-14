@@ -47,3 +47,78 @@ nav > h4 {
     border-radius: 5px;
     background: #FFF;
 }
+
+.card--image > img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card--text {
+    padding: 12px 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location--details {
+    display: flex;
+    align-items: center;
+}
+
+.location--tag {
+    width: 14px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.location {
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.741px;
+    padding-left: 5px;
+}
+
+.google-link {
+    color: #918E9B;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    padding-left: 12px;
+}
+
+.location--name {
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 5px 0 20px 0 ;
+}
+
+.location--period {
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.location--description {
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 15.36px */
+}
