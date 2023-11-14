@@ -1,4 +1,5 @@
 export default function Navbar() {
+    
     return (
         <nav>
             <img src="../../public/navbar-globe.png" alt="travel journal logo"/>
