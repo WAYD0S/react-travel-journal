@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background: #F55A5A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+nav * {
+    padding: 2px;
+}
+
+nav > img {
+    max-width: 24px;
+}
+
+nav > h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.085px;
+}

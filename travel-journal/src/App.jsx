@@ -1,9 +1,11 @@
-import React from 'react'
-
-import './App.css'
+import React from "react"
+import data from "./data"
+import Navbar from "./components/Navbar"
 
 function App() {
-  return ('')
+  return (
+    <Navbar />
+  )
 }
 
 export default App
