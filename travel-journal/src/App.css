@@ -1,0 +1,21 @@
+/* App.css */
+
+:root {
+    --clr-accent: #f55a5a;
+    --ff-main: "Inter", sans-serif;
+    
+    --clr-card-bg: #fff;
+    --clr-text-main: #2b283a;
+    --clr-text-light: #fff;
+    --clr-background-light: #fff8f8;
+  }
+  
+  .dark-mode {
+    --clr-card-bg: #2e2e2e;
+    --clr-text-main: #ffffff;
+    --clr-text-light: #fff;
+    --clr-background-light: #2c2b2b;
+  }
+  
+  /* Add other global styles here */
+  
