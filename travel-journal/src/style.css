@@ -86,12 +86,12 @@ nav * {
 }
 
 nav > img {
-    max-width: 24px;
+    max-width: 1.5em;
 }
 
 nav > h4 {
     color: var(--clr-text-light);
-    font-size: 20px;
+    font-size: 1.25em;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -103,8 +103,8 @@ nav > h4 {
 .switch {
     position: relative;
     display: inline-block;
-    width: 35px;
-    height: 22px;
+    width: 2.1875em;
+    height: 1.375em;
 }
 
 .switch input {
@@ -163,14 +163,14 @@ border-radius: 50%;
 .cards-list {
     display: flex;
     flex-direction: column;
-    padding: 20px 200px;
+    padding: 4em 3em;
     background: var(--clr-background-light);
 }
 
 .card {
     display: flex;
-    padding: 40px 40px;
-    margin: 20px 0px;
+    padding: 2.5em 2.5em;
+    margin: 1.25em 0;
     border-radius: 5px;
     background: var(--clr-card-bg);   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
@@ -178,10 +178,20 @@ border-radius: 50%;
 }
 
 .card--image > img {
-    width: 200px;
+    width: 12.5em;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    transform: scale(1);
+    transition: all 650ms ease-in-out;
+}
+
+.card--image > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+    /* filter: brightness(80%); */
 }
 
 /* ---------------------- */
@@ -190,10 +200,10 @@ border-radius: 50%;
 /* ---------------------- */
 
 .card--text {
-    padding: 12px 40px 20px 20px;
+    padding: 0.75em 2.5em 1.25em 1.25em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 
 .location--details {
@@ -202,18 +212,18 @@ border-radius: 50%;
 }
 
 .location--tag {
-    width: 14px;
-    height: 20px;
+    width: 1em;
+    height: 1.25em;
     flex-shrink: 0;
 }
 
 .location {
     color: var(--clr-text-main);
-    font-size: 17px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.741px;
+    letter-spacing: 0.1088125;
     padding-left: 5px;
 }
 
@@ -229,28 +239,28 @@ border-radius: 50%;
 
 .location--name {
     color: var(--clr-text-main);
-    font-size: 35px;
+    font-size: 2.1875em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 5px 0 20px 0 ;
+    padding: 0.3125em 0 0.75em 0 ;
 }
 
 .location--period {
     color: var(--clr-text-main);
-    font-size: 15px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .location--description {
-    margin-top: 10px;
+    margin-top: 0.625em;
     color: var(--clr-text-main);
-    font-size: 15px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 15.36px */
+    line-height: 2em; /* 15.36px */
 }
 
 /* ---------------------- */
@@ -259,8 +269,8 @@ border-radius: 50%;
 
 .spacer {
     width: 100%;
-    height: 2px; /* Thickness of the black line */
-    background-color: #F55A5A;
+    height: 0.125em; /* Thickness of the black line */
+    background-color: var(--clr-accent);
 }
 
 /* ---------------------- */
@@ -268,10 +278,47 @@ border-radius: 50%;
 /* ---------------------- */
 
 footer {
-    background: #F55A5A;
+    background: var(--clr-accent);
     height: 55px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #eeeef1;
+    justify-content: space-around;
+    color: var(--clr-text-main);
+}
+
+
+/* For any screen smaller than 600px*/
+@media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .card--img {
+      width: 100%;
+    }
+  
+    .card--infos {
+      margin: 1em 0 0 0;
+      padding: 0;
+    }
+
+    .location--name {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .card--img {
+      width: 100%;
+    }
+  
+    .card--infos {
+      margin: 1em 0 0 0;
+      padding: 0;
+    }
 }

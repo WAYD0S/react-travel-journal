@@ -51,11 +51,11 @@ function App() {
   
   return (
     <div className={isDarkMode ? 'dark-mode' : ''}>
-      <Navbar toggleDarkMode = {toggleDarkMode}/>
+      <Navbar />
       <section className="cards-list">
         {cards}
       </section>
-      <Footer />
+      <Footer toggleDarkMode = {toggleDarkMode}/>
     </div>
   )
 }
