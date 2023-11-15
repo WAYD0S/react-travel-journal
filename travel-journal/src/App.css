@@ -10,12 +10,12 @@
     --clr-background-light: #fff8f8;
   }
   
-  .dark-mode {
+.dark-mode {
     --clr-card-bg: #2e2e2e;
     --clr-text-main: #ffffff;
     --clr-text-light: #fff;
     --clr-background-light: #2c2b2b;
-  }
+}
   
   /* Add other global styles here */
   

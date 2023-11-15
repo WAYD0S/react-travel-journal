@@ -1,11 +1,3 @@
-// export default function Footer() {
-//     return (
-//         <footer>
-//             <small>Coded by Rishabh Raturi</small>
-//         </footer>
-//     )
-// }
-
 import React from 'react';
 
 const Footer = ({ isDarkMode, toggleDarkMode }) => {
