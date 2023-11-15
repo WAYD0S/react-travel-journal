@@ -32,7 +32,7 @@ This is a solution to the Scrimba Travel Journal based on a [Figma design](https
 ### Links
 
 - Live Site URL: [@Netlify](https://stellar-melba-12896b.netlify.app/)
-- Solution URL: [@GitHub](https://github.com/WAYD0S/react-travel-journal/tree/master/travel-journal)
+- Solution URL: [@GitHub](https://github.com/WAYD0S/react-travel-journal)
 
 ### Getting Started with Create React App
 
