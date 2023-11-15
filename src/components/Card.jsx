@@ -4,11 +4,11 @@ export default function Card(props) {
     return (
         <div className="card">
             <div className="card--image">
-                <img src={`./public/${props.coverImg}`} alt="location image" />
+                <img src={`./${props.coverImg}`} alt="location image" />
             </div>
             <div className="card--text">
                 <div className="location--details">
-                    <img src="./public/location-tag.svg" className="location--tag"/>
+                    <img src="./location-tag.svg" className="location--tag"/>
                     <span className="location">{props.country}</span>
                     <a href={props.mapsLink} className="google-link" >View on Google Maps</a>
                 </div>
